@@ -1,0 +1,286 @@
+/* .navb{
+  display: flex;
+  padding: 10px;
+  background-color: rgb(235, 235, 235);
+  align-items: center;
+  max-height: 30px;
+  
+}
+.right{
+  display: flex;
+  margin-left: 600px;
+}
+.left{
+  display: flex;
+  margin-left: 100px;
+  display: inline-flex;
+}
+.right button{
+  display: flex;
+  background:rgb(235, 235, 235);
+  border: 0;
+  color:rgb(107, 104, 104);
+}
+.right button:hover{
+  color: black;
+} */
+
+.navb {
+  display: flex;
+  padding: 10px;
+  background-color: rgb(235, 235, 235);
+  align-items: center; /* Aligns items vertically in the center */
+  max-height: 50px; /* Increased height for better visibility */
+}
+
+.left, .right {
+  display: flex;
+  align-items: center; /* Vertically aligns items in the center */
+}
+
+.left {
+  margin-right: auto; /* Pushes the .left section to the left */
+  margin-left: 20px; /* Adjust margin to position as needed */
+}
+
+.right {
+  margin-left: auto; /* Pushes the .right section to the right */
+  margin-right: 20px; /* Adjust margin to position as needed */
+}
+
+.cart {
+  display: flex;
+  align-items: center; /* Aligns icon and text vertically */
+  margin-right: 10px; /* Space between icon and text/button */
+}
+
+.right button {
+  background: rgb(235, 235, 235);
+  border: 0;
+  color: rgb(107, 104, 104);
+  margin-left: 5px; /* Space between icon and button */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.right button:hover {
+  color: black; /* Changes text color on hover */
+}
+
+
+.image img{
+  height: 150px;width: 200px;
+  margin-left: 300px;
+}
+.image{
+  display: flex;
+}
+.image input{
+  height: 40px;width: 220px;
+  border-radius: 12px;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+.cart1{
+  height: 20px;width: 20px;
+}
+.image {
+  display: flex;
+  align-items: center;
+  /* Other styles for the .image class */
+}
+
+.cart1 {
+  margin-top: 80px;
+  margin-left: 10px;
+  display: flex; /* Enable flexbox layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  background-color: rgb(225, 236, 245);  
+  padding: 20px;
+  border-radius: 50%; /* Optional: Makes the div circular */
+  border: aqua 1px solid;
+}
+
+.select{
+  background-color: aqua; 
+  padding: 0px;
+}
+.card-title{
+  color: rgb(16, 165, 165);
+  font-size: 50px;
+  margin-left: 20px;
+}
+.btn{
+  border: aqua 1px solid;
+}
+.btn:hover{
+  background-color: aqua;
+}
+#car{
+  display: flex;
+}
+.card-img-top{
+  height: 200px;
+  width: 150px;
+}
+.card1{
+  padding-left: 35px;
+  border: gray 1px solid;
+}
+.card1{
+  margin-left: 15px;
+  padding-top: 20px;padding-bottom: 20px;
+  border-radius: 20px;
+}
+.card-title{
+  font-size: large;
+}
+.cart3{
+  margin-left: 8px;
+}
+.card-title1{
+  font-size: xx-large;
+  color: rgb(7, 241, 163);
+}
+.card1:hover {
+  transform: scale(1.05); /* Slightly scale up the card */
+  box-shadow: 0px 15px 12px rgba(70, 71, 71, 0.267); /* Shadow effect */
+  
+}
+
+.card1:hover .card-body {
+  filter: blur(0px); /* Apply blur effect to the card body */
+}
+.vivo{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+  font-size: xx-large;
+  font-weight: bolder;
+  color: rgb(7, 241, 163);
+
+}
+  
+
+
+/* Container styling */
+/* Container styling for the image scale effect */
+/* Container styling for the image scale effect */
+.scale {
+  background-color: white; /* Background color for the container */
+  padding: 20px; /* Padding around the images */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Black shadow for the container */
+  display: flex; /* Flexbox to align children */
+  justify-content: center; /* Center images horizontally */
+  align-items: center; /* Center images vertically */
+  overflow: hidden; /* Hide any overflow */
+  margin-top: 10px;
+}
+
+/* Animation container */
+.animation {
+  display: flex; /* Flexbox to arrange images in a row */
+  flex-direction: row; /* Arrange images in a row */
+  animation: slide 10s infinite; /* Apply sliding animation */
+}
+
+/* Individual image styling */
+.animation img {
+  width: 100px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  opacity: 0; /* Start with images hidden */
+  animation: fadeIn 1s forwards; /* Apply animation */
+  margin-right: 10px; /* Space between images */
+}
+
+/* Keyframes for the fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8); /* Start slightly smaller */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* End at original size */
+  }
+}
+
+/* Keyframes for sliding effect */
+@keyframes slide {
+  0% {
+    transform: translateX(0); /* Start at original position */
+  }
+  100% {
+    transform: translateX(-100%); /* Move left by the full width of the container */
+  }
+}
+
+/* Delayed animation for each image */
+.animation img:nth-child(1) {
+  animation-delay: 0.5s; /* Delay for the first image */
+}
+
+.animation img:nth-child(2) {
+  animation-delay: 1s; /* Delay for the second image */
+}
+
+.animation img:nth-child(3) {
+  animation-delay: 1.5s; /* Delay for the third image */
+}
+
+.animation img:nth-child(4) {
+  animation-delay: 2s; /* Delay for the fourth image */
+}
+
+.animation img:nth-child(5) {
+  animation-delay: 2.5s; /* Delay for the fifth image */
+}
+.links{
+  display: flex;
+  justify-content: space-between;
+  font-size: x-large;
+  font-weight: bolder;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+.brand a{
+  display: list-item;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight:lighter ;
+  color: rgb(107, 97, 97);
+}
+.QuickLinks a{
+  display: list-item;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight:lighter ;
+  color: rgb(107, 97, 97);
+
+}
+.contact p{
+  font-size: large;
+  font-weight: lighter;
+  margin-left: 20px;
+}
+.brand a:hover{
+  color:black
+}
+.QuickLinks a:hover{
+   color: black;
+}
+.mail input{
+  width: 120px;
+  height: 35px;
+  border-radius: 12px;
+}
+.mail button{
+  height: 35px;
+  border-radius: 20px;
+  background-color: rgb(15, 223, 171);
+  margin-top: 5px;
+  margin-left: 3px;
+}
+/
